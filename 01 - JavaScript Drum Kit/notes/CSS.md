@@ -33,3 +33,20 @@
 **border: .4rem solid black;**
 * 其中 .4rem 中  .4 表示的是 0.4 
 > 啊,自己好傻,一时间都没反应过来,竟还傻傻的 Google 了
+
+**transition:all .07s ease;**
+* CSS3 transition 属性
+* transition 是一个复合属性,其中可以设置四个过渡属性
+* 语法:
+    * transition:property   duration    timing-function     delay;
+        * transition-property : 规定设置过渡效果的 CSS 属性的名称
+            * transition-property : none | all | property
+            > 其中,property 定义应用过渡效果的 CSS 属性名称列表,列表以逗号分隔
+        * transition-duration : 规定完成过渡效果需要的时间(秒 或者 毫秒)
+            * 默认值为 0 ,即 没有任何效果
+            * JS 语法 : object.style.transitionDuration = "5s"
+        * transition-timing-function : 规定速度效果的速度曲线
+            * [相关知识简介](http://www.w3school.com.cn/cssref/pr_transition-timing-function.asp)
+            * [相关效果演示](http://www.w3school.com.cn/tiy/t.asp?f=css3_transition-timing-function2)
+        * transition-delay : 定义过渡效果何时开始(即在过渡效果开始之前需要等待的时间)
+            * 默认值 为 0
