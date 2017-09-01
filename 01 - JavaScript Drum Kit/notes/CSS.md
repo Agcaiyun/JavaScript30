@@ -58,3 +58,15 @@
     * 如果设置为``` background-color:rgba() ```这种形式,里面的子元素 比如文字,就不会变的有透明度
     * 往往 ```background-color:rgba() ```会更符合我们的需求
 
+**text-shadow**
+* text-shadow : h-shadow  v-shadow  blur  color;
+* [效果演示](http://www.w3school.com.cn/tiy/c.asp?f=css_text-shadow)
+* 省略的长度是 0 
+
+**transform**
+* transform 属性向元素应用 2D 或 3D 转换.我们可以对元素进行旋转/缩放/移动 或 倾斜
+* transform:scale(x,y) 
+    * 定义 2D 缩放
+    * 如果参数中只有一个数值,则认为 x y 设置为 相同的数值
+* [参考资料](http://www.w3school.com.cn/cssref/pr_transform.asp)
+
