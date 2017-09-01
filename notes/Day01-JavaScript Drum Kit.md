@@ -159,8 +159,12 @@ function pauseAudio(){
     **注意**
     * IE 或 Opera12 及更早版本 不支持第二个参数
 
+
 **data-key**
-    * 这是一个自定义属性,如果没有合适的属性可以定义一个参数,则就可以通过 data-* 的方式自定义页面的数据.在这里作用为:通过 data-key 将页面展示的内容与 audio 关联起来.
+* 这是一个自定义属性,如果没有合适的属性可以定义一个参数,则就可以通过 data-* 的方式自定义页面的数据.在这里作用为:通过 data-key 将页面展示的内容与 audio 关联起来.
+
+**display:flex**
+* 涉及到 flex 布局   [参考资料](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
 
     
