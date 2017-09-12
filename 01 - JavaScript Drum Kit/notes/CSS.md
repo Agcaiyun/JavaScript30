@@ -13,9 +13,9 @@
 
 **display:flex;**
 * [参考资料](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
-* 布局的传统解决方案,基于 盒模型,依赖 dispaly 属性 +  position 属性 + float 属性.它对于那些特殊布局非常不方便,比如:垂直居中 就不容易实现
-* 2009年,W3C 提出了一种新的方案 --- Flex 布局. 它可以简便 完整 响应式 地实现各种页面布局.目前,它已经得到了所有浏览器的支持,这意味着,现在就能很安全的使用这项功能.
-* 设置为 flex 布局后,子元素的 float clear vertical-align 属性将失效.
+* 布局的传统解决方案,基于 盒模型,依赖 ```dispaly``` 属性 +  ```position``` 属性 + ```float``` 属性.它对于那些特殊布局非常不方便,比如:垂直居中 就不容易实现
+* 2009年,```W3C``` 提出了一种新的方案 --- ```Flex``` 布局. 它可以简便 完整 响应式 地实现各种页面布局.目前,它已经得到了所有浏览器的支持,这意味着,现在就能很安全的使用这项功能.
+* 设置为``` flex ```布局后,子元素的 ```float``` ```clear``` ```vertical-align``` 属性将失效.
 
 **min-height:100vh**
 * vh :```CSS3```中 相对长度单位,表示相对视口高度(```Viewport Height```),```1vh``` = 1% * 视口高度.
@@ -69,4 +69,12 @@
     * 定义 2D 缩放
     * 如果参数中只有一个数值,则认为 x y 设置为 相同的数值
 * [参考资料](http://www.w3school.com.cn/cssref/pr_transform.asp)
+
+
+**小结**
+* transform: scale(1.1);    该属性在可以将对应的元素缩放到原来的 1.1 倍,在这个小项目中,指的是当 当键盘被点击的时候,该元素缩放至原来的 1.1 倍
+* .key{border: .4rem solid black;}.playing{border-color: #ffc600;}  这两个属性在按键被点击的时候改变边框的颜色
+* .key{text-shadow: 0 0 .5rem black;}.playing{box-shadow: 0 0 1rem #ffc600;}    这两条属性共同作用,在按键被点击的时候改变阴影的效果
+* transition: all .07s ease;    定义拥有该属性的动画在 0.07秒 内完成
+* 我们可以在按键被按下的时候为对应的元素添加 .playing 类,在动画结束之后 移除 .playing  类(不然的话,动画会一直进行,并且再次点击也没有了动画效果)
 
