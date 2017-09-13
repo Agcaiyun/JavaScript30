@@ -145,5 +145,26 @@ function pauseAudio(){
 > [  ] 表示参数可选
 * [参考资料](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)(4.5 flex属性)
     
+**document.querySelector()**
+* 返回文档中匹配指定的选择器组的第一个元素
+* 如果没有找到匹配的元素,则返回 null ,如果找到多个,则返回第一个匹配到的元素
+* [参考文章](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/querySelector)
+* 语法
+    * element = document.querySelector(selectors)
+    * element 是一个 element 对象 ( DOM )
+    * selectors 是一个字符串,包含一个或者多个 CSS 选择器,多个则以逗号隔开
+    * 比如: var el = document.querySelector(".myclass");
+        * 会返回当前文档中第一个类名为 "myclass" 的元素
+* 与本项目中 audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); 类似的一个例子为:
+```
+<div class="user-panel main">
+    <input name="login"/> //这个标签将被返回
+</div>
 
+<script>
+    var el = document.querySelector("div.user-panel.main input[name=login]");
+</script>
+```
 
+**audio.currentTime = 0**
+* 

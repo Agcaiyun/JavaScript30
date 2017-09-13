@@ -58,17 +58,18 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
-    function playAudio(e) {
-        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        if (!audio) return;
-        const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-        if (!key) return;
-        audio.currentTime = 0;
-        audio.play();
-        key.classList.add('playing');
+  // 按键监听 & 音效播放 & 添加动画
+  // 这就是我们之前说的: 当按键被按下的时候,出现声音并且同时有动画出现(notes JS.md 中有所记录)
+  function playAudio(e){
+    let audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    if(!audio){ 
+      return null;
     }
-    window.addEventListener('keydown', playAudio);
-
+    let key = document.querySeletor(`div[data-key="${e.keyCode}"]`);
+    if(!key){
+      return null;
+    }
+    audio.currentTime = 0;
 </script>
 
 
