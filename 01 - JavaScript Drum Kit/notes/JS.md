@@ -167,4 +167,4 @@ function pauseAudio(){
 ```
 
 **audio.currentTime = 0**
-* 
+* 将 ```audio``` 播放的当前时间重置为 零,如果这个数字不是零,那就是将 ```audio``` 的当前播放时间设置为 该数组,然后再进行下一步的操作

@@ -16,6 +16,8 @@
 * 布局的传统解决方案,基于 盒模型,依赖 ```dispaly``` 属性 +  ```position``` 属性 + ```float``` 属性.它对于那些特殊布局非常不方便,比如:垂直居中 就不容易实现
 * 2009年,```W3C``` 提出了一种新的方案 --- ```Flex``` 布局. 它可以简便 完整 响应式 地实现各种页面布局.目前,它已经得到了所有浏览器的支持,这意味着,现在就能很安全的使用这项功能.
 * 设置为``` flex ```布局后,子元素的 ```float``` ```clear``` ```vertical-align``` 属性将失效.
+* flex 属性是 flex-grow ,flex-shrink 和 flex-basis 的简写,默认值为 0 1 auto(后两个属性可选)
+    * [参考资料](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
 **min-height:100vh**
 * vh :```CSS3```中 相对长度单位,表示相对视口高度(```Viewport Height```),```1vh``` = 1% * 视口高度.
